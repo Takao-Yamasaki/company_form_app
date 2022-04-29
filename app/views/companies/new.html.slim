@@ -1,0 +1,12 @@
+h1 企業情報
+
+= link_to '企業一覧', companies_path
+
+= form_with model: @company, url: companies_path, local: true do |f|
+  .form-group 
+    = f.label :name
+    = f.text_field :name
+  .form-group 
+    = f.label :address
+    = f.text_field :address
+  = f.submit 'Create Signup form'
