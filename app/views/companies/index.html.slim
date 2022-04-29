@@ -1,13 +1,12 @@
 h1 企業一覧
 = link_to '新規作成', new_company_path 
 
-table
-  thead 
-    th ID 
-    th 会社名
-    th 住所
-  tbody 
-    - @companies.each do |company|
-      td= company.id 
-      td= company.name 
-      td= company.address 
+- @companies.each do |company|
+  h1 企業一覧
+  = company.id 
+  = company.name 
+  = company.address
+  
+  h2 ユーザー一覧
+  = company.user_name 
+  = company.email 

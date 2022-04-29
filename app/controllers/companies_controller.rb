@@ -1,15 +1,15 @@
 class CompaniesController < ApplicationController
   def index
-    @companies_users = Company.includes(:user)
+    @companies = Company.includes(:user)
   end
 
   def new
-    @company_user = CompanyUser.new
+    @company = CompanyUser.new
   end
 
   def create
-    @company_user = CompanyUser.create(company_user_params)
-    @company_user.save
+    @company = CompanyUser.create(company_user_params)
+    @company.save
     redirect_to root_path
   end
 
