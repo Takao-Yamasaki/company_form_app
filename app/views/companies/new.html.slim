@@ -5,8 +5,8 @@
   / 企業情報
   h1 企業情報
   .form-group 
-    = f.label :name
-    = f.text_field :name
+    = f.label :company_name
+    = f.text_field :company_name
   .form-group 
     = f.label :address
     = f.text_field :address
@@ -19,9 +19,9 @@
     = f.label :email
     = f.text_field :email
   .form-group 
-    = f.label :password_digest
-    = f.password_field :password_digest
+    = f.label :password
+    = f.password_field :password
   .form-group 
-    = f.label :password_confirm
-    = f.password_field :password_confirm
+    = f.label :password_confirmation
+    = f.password_field :password_confirmation
   = f.submit 'Create Signup form'

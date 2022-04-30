@@ -58,3 +58,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # slimの導入
 gem 'slim-rails'
 gem 'html2slim'
+
+# bootstrapの導入
+gem 'bootstrap'
